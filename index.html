@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a7accf6df6.js" crossorigin="anonymous"></script>
+    <title>Second-Project-FreeCodeCamp</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0px;
+            justify-content: center;
+            align-items: center;
+        }
+        body {
+            background-color: #eee;
+            font-family: 'Lato', sans-serif;
+            color: white;
+        }
+
+        /* .................................. */
+        /* NAV BAR SECTION */
+        /* ................................... */
+        nav{
+            
+        }
+
+        .header-img{
+            width: 200px;
+            margin-top: 20px;
+            padding: 10px 80px;
+             
+        } 
+        header{
+            width: 100%;
+            height: 80px;
+        }
+    
+         nav ul{
+            float: right;
+
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin-right: 80px;
+        }
+        li a{
+            text-transform: capitalize;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+
+        /* ............................ */
+        /* MAIN SECTION */
+        /* ............................. */
+        form{
+            justify-items: center;
+            text-align: center;
+            margin: 80px;
+            line-height: 40px;
+            color: black;
+        }
+        #email{
+            width: 300px;
+            height: 30px;
+            border-radius: 5px;
+            padding-left: 8px;
+        }
+        ::placeholder{
+            padding: 5px;
+            font-style: italic;
+            text-transform: capitalize;
+        }
+        #submit{
+            color: black;
+            width: 85px;
+            padding: 5px;
+            text-transform: capitalize;
+            font-weight: bold;
+            background-color: rgba(252, 141, 14, 0.801);
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        #submit:hover{
+            background-color: rgb(243, 133, 7);
+            padding: 6px;
+        }
+
+
+        /* ....................................... */
+        /*  SECTIONS */
+        /* ......................................... */
+
+         .container {
+           color: black;
+           max-width: 60%; 
+           margin: auto;
+           display: block;
+        }
+        .products{
+            margin-bottom: 50px;
+        }
+        .grid{
+            display: inline-flex;
+        }
+        .icon{
+            font-size: 40px;
+            width: 40px;
+            color: rgb(255, 154, 2);
+            margin-right: 40px;
+        }
+        p, h1{
+            margin: 15px;
+            letter-spacing: 1;
+        }
+
+        #how-it-works{
+            display: flex;
+            margin-top: 50px;
+            justify-content: center;
+            
+        }
+
+        #prices{
+           width: 100%;
+           margin: auto;
+           text-align: center;
+        }
+        .products{
+            display: flex;
+            width: 100%;
+            margin-top: 50px;
+        }
+        .level{
+            max-width: 100%;
+            height: 280px;
+            border: 1px solid black;
+            margin: 15px;
+            border-radius: 5px;
+        }
+        .set{
+            padding: 10px;
+            font-style: italic;
+            font-size: 20px;
+            text-transform: uppercase;
+            background-color: gray;
+        }
+       ol li{
+            font-size: 20px;
+            font-style: italic;
+            list-style: none;
+        }
+        button{
+            width: 60%;
+            margin-bottom: 60px;
+            margin-top: 20px;
+            padding: 8px 30px;
+            text-transform: capitalize;
+            background-color: rgb(255, 154, 2);
+            border: 1px solid black;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        /* ........................ */
+                   /* FOOTER */
+        /* ......................... */
+
+        footer{
+            background-color: rgb(160, 155, 155);
+            width: 700px;
+            margin: auto;
+            height: 90px;
+        }
+        #footer{
+            margin-top: 20px;
+             float: right;
+        }
+        .footer-span{
+            margin-left: 80px;
+        }
+        span{
+           margin-right: 20px;
+        }
+        span a{
+            text-decoration: none;
+            color: black;
+        }
+
+
+        @media (max-width: 800px) {
+            .products{
+                display: block;
+            }
+         }
+
+         @media (max-width: 500px){
+            nav ul li{
+                 margin: 30px;
+                 line-height: normal;
+                 display: block;
+             }
+            }
+            @media (max-width:700px) {
+                #footer{
+                    display: block;
+                    width: 100%;
+                    float: none;
+                }
+            }
+    </style>
+    <header id="header">
+        <nav>
+            <img src="assets/product-landing-page-logo.png" alt="logo" class="header-img">
+           <ul>
+              <li class="nav-link"><a href="#features">features</a></li>
+              <li class="nav-link"><a href="#how-it-works">how it works</a></li>
+              <li class="nav-link"><a href="#prices">prices </a></li>
+           </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <form action="https://www.freecodecamp.com/email-submit" method="post" id="form" target="blank">
+                <h2>Handcrafted, home-made masterpieces</h2>
+                <input type="email" name="email" placeholder="enter your address" id="email" required><br>
+                <input type="submit" value="get started" id="submit">
+            </form>
+        </section>
+        <div class="container">
+            <section id="features">
+                <div class="grid">
+                    <div class="icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+                   <div class="disc">
+                    <h1>Premium Materials</h1>
+                    <p>Our trombones use the shiniest brass which is sourced locally.
+                     This will increase the longevity of your purchase.</p>
+                   </div>
+                </div>
+                <div class="grid">
+                    <div class="icon"><i class="fa-solid fa-truck"></i></div>
+                   <div class="disc">
+                    <h1>Fast Shipping</h1>
+                    <p>We make sure you recieve your trombone as soon as we have finished making it.
+                     We also provide free returns if you are not satisfied.</p>
+                   </div>
+                </div>
+                <div class="grid">
+                    <div class="icon"><i class="fa-solid fa-battery-full"></i></div>
+                    <div class="disc">
+                        <h1>Quality Assurance</h1>
+                    <p>For every purchase you make, we will ensure there are no damages or faults 
+                     and we will check and test the pitch of your instrument.</p>
+                    </div>
+                </div>
+               </section>
+
+
+               <section id=how-it-works>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </section>
+
+              <section id="prices">
+                    <div class="products">
+                        <div class="level">
+                           <div class="set">Tenor Trombone</div>
+                              <h1>$600</h1>
+                                <ol>
+                                    <li>lorem ipsum</li>
+                                     <li>lorem ipesum</li>
+                                     <li>lorem ipesum </li>
+                                     <li>lorem ipsumm</li>
+                                </ol>
+                                <button>select</button>
+                        </div> 
+
+                        <div class="level">
+                            <div class="set">bass Trombone</div>
+                               <h1>$900</h1>
+                                 <ol>
+                                     <li>lorem ipsum</li>
+                                     <li>lorem ipesum</li>
+                                     <li>lorem ipesum </li>
+                                     <li>lorem ipsumm</li>
+                                 </ol>
+                                 <button>select</button>
+                         </div> 
+
+                         <div class="level">
+                            <div class="set">valve trombone</div>
+                               <h1>$1200</h1>
+                                 <ol>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipesum</li>
+                                    <li>lorem ipesum </li>
+                                    <li>lorem ipsumm</li>
+                                 </ol>
+                                 <button>select</button>
+                         </div> 
+                    </div>
+              </section>
+        </div>
+    </main>
+    <footer>
+        <div id="footer">
+           <div class="footer-span">
+            <span><a href="#">privacy</a></span>
+            <span><a href="#">terms</a></span>
+            <span><a href="#">vontact</a></span> 
+            </div>
+            <p>Copyright 2016, Original Trombones</p>
+          
+        </div>
+    </footer>
+</body>
+</html>
